@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albus Technologies - Coming Soon</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .logo {
+            position: absolute;
+            top: 60px;
+            font-size: 2rem;
+            font-weight: 300;
+            letter-spacing: 3px;
+            color: #e0d9ff;
+            text-shadow: 0 0 20px rgba(147, 112, 219, 0.8);
+        }
+
+        .main-content {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 5rem;
+            font-weight: 300;
+            letter-spacing: 8px;
+            color: #fff;
+            text-shadow:
+                0 0 10px rgba(147, 112, 219, 0.8),
+                0 0 20px rgba(147, 112, 219, 0.6),
+                0 0 30px rgba(147, 112, 219, 0.4),
+                0 0 40px rgba(147, 112, 219, 0.2);
+            animation: glow 3s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+            0%, 100% {
+                text-shadow:
+                    0 0 10px rgba(147, 112, 219, 0.8),
+                    0 0 20px rgba(147, 112, 219, 0.6),
+                    0 0 30px rgba(147, 112, 219, 0.4),
+                    0 0 40px rgba(147, 112, 219, 0.2);
+            }
+            50% {
+                text-shadow:
+                    0 0 20px rgba(147, 112, 219, 1),
+                    0 0 30px rgba(147, 112, 219, 0.8),
+                    0 0 40px rgba(147, 112, 219, 0.6),
+                    0 0 50px rgba(147, 112, 219, 0.4);
+            }
+        }
+
+        .subtitle {
+            margin-top: 30px;
+            font-size: 1.2rem;
+            letter-spacing: 4px;
+            color: #b8b0d9;
+            font-weight: 300;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 1.5rem;
+                top: 40px;
+            }
+
+            h1 {
+                font-size: 3rem;
+                letter-spacing: 4px;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+                letter-spacing: 2px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">ALBUS TECHNOLOGIES</div>
+
+    <div class="main-content">
+        <h1>COMING SOON</h1>
+        <div class="subtitle">Something magical is brewing</div>
+    </div>
+</body>
+</html>
