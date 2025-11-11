@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,9 +27,17 @@
         }
 
         @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
         .logo {
@@ -59,13 +68,16 @@
         }
 
         @keyframes glow {
-            0%, 100% {
+
+            0%,
+            100% {
                 text-shadow:
                     0 0 10px rgba(147, 112, 219, 0.8),
                     0 0 20px rgba(147, 112, 219, 0.6),
                     0 0 30px rgba(147, 112, 219, 0.4),
                     0 0 40px rgba(147, 112, 219, 0.2);
             }
+
             50% {
                 text-shadow:
                     0 0 20px rgba(147, 112, 219, 1),
@@ -101,7 +113,12 @@
             }
         }
     </style>
+    <!-- Cloudflare Web Analytics -->
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+        data-cf-beacon='{"token": "88cc4528878147f4a2d1f3762d917710"}'></script>
+    <!-- End Cloudflare Web Analytics -->
 </head>
+
 <body>
     <div class="logo">ALBUS TECHNOLOGIES</div>
 
@@ -110,4 +127,5 @@
         <div class="subtitle">Something magical is brewing</div>
     </div>
 </body>
+
 </html>
