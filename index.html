@@ -21,104 +21,83 @@
             box-sizing: border-box;
         }
 
+        ::selection {
+            background-color: #D9F827;
+            color: #000;
+        }
+
         body {
-            font-family: 'Georgia', serif;
-            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-            background-size: 400% 400%;
-            animation: gradientShift 15s ease infinite;
-            color: #fff;
-            height: 100vh;
+            font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            background-color: #ffffff;
+            color: #111827;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            overflow: hidden;
-        }
-
-        @keyframes gradientShift {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
+            padding: 2rem;
         }
 
         .logo {
             position: absolute;
-            top: 60px;
-            font-size: 2rem;
-            font-weight: 300;
-            letter-spacing: 3px;
-            color: #e0d9ff;
-            text-shadow: 0 0 20px rgba(147, 112, 219, 0.8);
+            top: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.5rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: #111827;
+            text-transform: uppercase;
         }
 
         .main-content {
             text-align: center;
+            max-width: 48rem;
         }
 
         h1 {
-            font-size: 5rem;
-            font-weight: 300;
-            letter-spacing: 8px;
-            color: #fff;
-            text-shadow:
-                0 0 10px rgba(147, 112, 219, 0.8),
-                0 0 20px rgba(147, 112, 219, 0.6),
-                0 0 30px rgba(147, 112, 219, 0.4),
-                0 0 40px rgba(147, 112, 219, 0.2);
-            animation: glow 3s ease-in-out infinite;
-        }
-
-        @keyframes glow {
-
-            0%,
-            100% {
-                text-shadow:
-                    0 0 10px rgba(147, 112, 219, 0.8),
-                    0 0 20px rgba(147, 112, 219, 0.6),
-                    0 0 30px rgba(147, 112, 219, 0.4),
-                    0 0 40px rgba(147, 112, 219, 0.2);
-            }
-
-            50% {
-                text-shadow:
-                    0 0 20px rgba(147, 112, 219, 1),
-                    0 0 30px rgba(147, 112, 219, 0.8),
-                    0 0 40px rgba(147, 112, 219, 0.6),
-                    0 0 50px rgba(147, 112, 219, 0.4);
-            }
+            font-size: 4.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            color: #111827;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.025em;
         }
 
         .subtitle {
-            margin-top: 30px;
-            font-size: 1.2rem;
-            letter-spacing: 4px;
-            color: #b8b0d9;
-            font-weight: 300;
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+            color: #4b5563;
+            font-weight: 400;
+        }
+
+        .accent {
+            color: #D9F827;
+            background-color: #000;
+            padding: 0.125rem 0.5rem;
+            display: inline-block;
+            box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
         }
 
         /* Responsive Design */
         @media (max-width: 768px) {
             .logo {
-                font-size: 1.5rem;
-                top: 40px;
+                font-size: 1.125rem;
+                top: 1.5rem;
             }
 
             h1 {
                 font-size: 3rem;
-                letter-spacing: 4px;
             }
 
             .subtitle {
-                font-size: 1rem;
-                letter-spacing: 2px;
+                font-size: 1.125rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            h1 {
+                font-size: 2.25rem;
             }
         }
     </style>
@@ -129,10 +108,10 @@
 </head>
 
 <body>
-    <div class="logo">ALBUS TECHNOLOGIES</div>
+    <div class="logo">Albus</div>
 
     <div class="main-content">
-        <h1>COMING SOON</h1>
+        <h1>Coming <span class="accent">Soon</span></h1>
         <div class="subtitle">Something magical is brewing</div>
     </div>
 </body>
